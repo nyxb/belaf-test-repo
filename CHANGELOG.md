@@ -5,6 +5,22 @@ All notable changes to belaf-test-repo will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.0] - 2025-12-19
+
+### Added
+
+- add array utility functions (unique, flatten, chunk)
+- add truncate utility function
+- add welcome function to greeting module
+- add math utility functions (add, subtract, multiply, divide)
+- add utility functions (capitalize, slugify)
+- add greeting module with greet and farewell functions
+
+### Fixed
+
+- add input validation and default values to greeting functions
+
+
 ## [0.3.0] - 2025-12-19
 
 ### Added
