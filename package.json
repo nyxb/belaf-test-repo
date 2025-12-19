@@ -1,12 +1,15 @@
 {
-  "name": "belaf-test-repo",
-  "version": "0.0.1",
+  "author": "nyxb",
   "description": "Test repository for belaf release management",
+  "keywords": [
+    "belaf",
+    "test"
+  ],
+  "license": "MIT",
   "main": "index.js",
+  "name": "belaf-test-repo",
   "scripts": {
     "test": "echo \"No tests yet\""
   },
-  "keywords": ["belaf", "test"],
-  "author": "nyxb",
-  "license": "MIT"
+  "version": "0.1.0"
 }
