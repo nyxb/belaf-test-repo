@@ -3,6 +3,7 @@
 
 const { greet, farewell } = require('./src/greet')
 const { capitalize, slugify } = require('./src/utils')
+const { add, subtract, multiply, divide } = require('./src/math')
 
 module.exports = {
   name: 'belaf-test-repo',
@@ -10,5 +11,9 @@ module.exports = {
   greet,
   farewell,
   capitalize,
-  slugify
+  slugify,
+  add,
+  subtract,
+  multiply,
+  divide
 }
