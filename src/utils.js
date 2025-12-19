@@ -17,4 +17,35 @@ function truncate(str, length = 50) {
   return str.length > length ? str.slice(0, length) + '...' : str
 }
 
-module.exports = { capitalize, slugify, truncate }
+/**
+ * Debounce function - delays execution until after wait milliseconds have elapsed
+ * @param {Function} fn - The function to debounce
+ * @param {number} wait - The number of milliseconds to delay
+ * @returns {Function} - The debounced function
+ */
+function debounce(fn, wait = 300) {
+  let timeoutId = null
+  return function (...args) {
+    clearTimeout(timeoutId)
+    timeoutId = setTimeout(() => fn.apply(this, args), wait)
+  }
+}
+
+/**
+ * Throttle function - limits execution to at most once per wait milliseconds
+ * @param {Function} fn - The function to throttle
+ * @param {number} wait - The minimum time between executions
+ * @returns {Function} - The throttled function
+ */
+function throttle(fn, wait = 300) {
+  let lastCall = 0
+  return function (...args) {
+    const now = Date.now()
+    if (now - lastCall >= wait) {
+      lastCall = now
+      return fn.apply(this, args)
+    }
+  }
+}
+
+module.exports = { capitalize, slugify, truncate, debounce, throttle }
