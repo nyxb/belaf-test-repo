@@ -1,19 +1,26 @@
 /**
- * Greeting module for belaf-test-repo
+ * Greeting functions
  */
 
 function greet(name = 'World') {
-  if (!name || typeof name !== 'string') {
-    throw new Error('Name must be a non-empty string')
+  if (typeof name !== 'string') {
+    throw new TypeError('Name must be a string')
   }
-  return `Hello, ${name}! Welcome to belaf-test-repo.`
+  return `Hello, ${name}!`
 }
 
-function farewell(name = 'Friend') {
-  if (!name || typeof name !== 'string') {
-    throw new Error('Name must be a non-empty string')
+function farewell(name = 'World') {
+  if (typeof name !== 'string') {
+    throw new TypeError('Name must be a string')
   }
-  return `Goodbye, ${name}! See you soon.`
+  return `Goodbye, ${name}!`
 }
 
-module.exports = { greet, farewell }
+function welcome(name = 'Guest', location = 'here') {
+  if (typeof name !== 'string' || typeof location !== 'string') {
+    throw new TypeError('Arguments must be strings')
+  }
+  return `Welcome to ${location}, ${name}!`
+}
+
+module.exports = { greet, farewell, welcome }
