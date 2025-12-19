@@ -3,11 +3,18 @@
  */
 
 function capitalize(str) {
+  if (typeof str !== 'string' || str.length === 0) return ''
   return str.charAt(0).toUpperCase() + str.slice(1)
 }
 
 function slugify(str) {
-  return str.toLowerCase().replace(/\s+/g, '-')
+  if (typeof str !== 'string') return ''
+  return str.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')
 }
 
-module.exports = { capitalize, slugify }
+function truncate(str, length = 50) {
+  if (typeof str !== 'string') return ''
+  return str.length > length ? str.slice(0, length) + '...' : str
+}
+
+module.exports = { capitalize, slugify, truncate }
