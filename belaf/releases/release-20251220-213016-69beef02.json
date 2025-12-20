@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "created_at": "2025-12-20T21:30:16.996759Z",
+  "created_by": "nyxb",
+  "base_branch": "main",
+  "releases": [
+    {
+      "name": "web",
+      "ecosystem": "Rust (Cargo)",
+      "previous_version": "0.3.0",
+      "new_version": "1.0.0",
+      "bump_type": "major",
+      "changelog": "# Changelog\n## [1.0.0] - 2025-12-20\n\n\n### 💥 Breaking Changes\n\n- Convert to Rust monorepo structure - ([](/commit/))\n\n\n### ✨ Features\n\n- Restructure to multi-workspace Rust monorepo - ([](/commit/))\n\n- Convert to Rust monorepo structure - ([](/commit/))\n",
+      "tag_name": "apps/web//v1.0.0",
+      "prefix": "apps/web/"
+    },
+    {
+      "name": "cli",
+      "ecosystem": "Rust (Cargo)",
+      "previous_version": "0.1.0",
+      "new_version": "1.0.0",
+      "bump_type": "major",
+      "changelog": "# Changelog\n## [1.0.0] - 2025-12-20\n\n\n### 💥 Breaking Changes\n\n- Convert to Rust monorepo structure - ([](/commit/))\n\n\n### ✨ Features\n\n- Restructure to multi-workspace Rust monorepo - ([](/commit/))\n\n- Convert to Rust monorepo structure - ([](/commit/))\n",
+      "tag_name": "apps/cli//v1.0.0",
+      "prefix": "apps/cli/"
+    },
+    {
+      "name": "api",
+      "ecosystem": "Rust (Cargo)",
+      "previous_version": "0.2.0",
+      "new_version": "1.0.0",
+      "bump_type": "major",
+      "changelog": "# Changelog\n## [1.0.0] - 2025-12-20\n\n\n### 💥 Breaking Changes\n\n- Convert to Rust monorepo structure - ([](/commit/))\n\n\n### ✨ Features\n\n- Restructure to multi-workspace Rust monorepo - ([](/commit/))\n\n- Convert to Rust monorepo structure - ([](/commit/))\n",
+      "tag_name": "apps/api//v1.0.0",
+      "prefix": "apps/api/"
+    }
+  ]
+}
