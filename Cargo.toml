@@ -1,0 +1,22 @@
+[workspace]
+resolver = "2"
+members = [
+    "apps/*",
+    "packages/*",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = ["nyxb <contact@nyxb.zip>"]
+repository = "https://github.com/nyxb/belaf-test-repo"
+
+[workspace.dependencies]
+tokio = { version = "1.42", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+anyhow = "1.0"
+thiserror = "2.0"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }

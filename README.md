@@ -1,23 +1,44 @@
 # belaf-test-repo
 
-Test repository for testing the belaf CLI and GitHub App.
+Rust monorepo for testing the belaf CLI and GitHub App.
 
-## Installation
+## Structure
 
-```bash
-npm install belaf-test-repo
+```
+belaf-test-repo/
+├── apps/
+│   ├── cli/          # Command-line interface
+│   ├── api/          # API server
+│   └── web/          # Web application
+├── packages/
+│   ├── utils/        # Shared utility functions
+│   └── config/       # Configuration management
+└── Cargo.toml        # Workspace configuration
 ```
 
-## Usage
+## Building
 
-```javascript
-const { greet, farewell } = require('belaf-test-repo/src/greet')
-const { capitalize, slugify } = require('belaf-test-repo/src/utils')
+```bash
+cargo build
+```
 
-console.log(greet('Developer'))  // Hello, Developer! Welcome to belaf-test-repo.
-console.log(farewell('Developer'))  // Goodbye, Developer! See you soon.
-console.log(capitalize('hello'))  // Hello
-console.log(slugify('Hello World'))  // hello-world
+## Running
+
+```bash
+# Run CLI
+cargo run -p cli
+
+# Run API
+cargo run -p api
+
+# Run Web
+cargo run -p web
+```
+
+## Testing
+
+```bash
+cargo test
 ```
 
 ## License
