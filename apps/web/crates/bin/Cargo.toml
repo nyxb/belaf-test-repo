@@ -1,15 +1,18 @@
 [package]
-name = "config"
+name = "web-bin"
 version.workspace = true
 edition.workspace = true
 license.workspace = true
 authors.workspace = true
 
-[lib]
-path = "src/lib.rs"
+[[bin]]
+name = "web"
+path = "src/main.rs"
 
 [dependencies]
+web-core.workspace = true
+tokio.workspace = true
 serde.workspace = true
-serde_json.workspace = true
 anyhow.workspace = true
-thiserror.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true

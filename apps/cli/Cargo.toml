@@ -1,18 +1,23 @@
-[package]
-name = "cli"
-version.workspace = true
-edition.workspace = true
-license.workspace = true
-authors.workspace = true
+[workspace]
+resolver = "2"
+members = [
+    "crates/core",
+    "crates/bin",
+]
 
-[[bin]]
-name = "cli"
-path = "src/main.rs"
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = ["nyxb <contact@nyxb.zip>"]
 
-[dependencies]
-utils = { path = "../../packages/utils" }
-config = { path = "../../packages/config" }
-tokio.workspace = true
-anyhow.workspace = true
-tracing.workspace = true
-tracing-subscriber.workspace = true
+[workspace.dependencies]
+# Internal
+cli-core = { path = "crates/core" }
+
+# External
+tokio = { version = "1.42", features = ["full"] }
+anyhow = "1.0"
+thiserror = "2.0"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
