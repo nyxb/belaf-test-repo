@@ -31,6 +31,7 @@ impl<T> ApiResponse<T> {
 pub struct HealthCheck {
     pub status: String,
     pub version: String,
+    pub uptime_seconds: Option<u64>,
 }
 
 impl Default for HealthCheck {
@@ -38,6 +39,16 @@ impl Default for HealthCheck {
         Self {
             status: "ok".to_string(),
             version: env!("CARGO_PKG_VERSION").to_string(),
+            uptime_seconds: None,
+        }
+    }
+}
+
+impl HealthCheck {
+    pub fn with_uptime(uptime: u64) -> Self {
+        Self {
+            uptime_seconds: Some(uptime),
+            ..Default::default()
         }
     }
 }
