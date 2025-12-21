@@ -42,6 +42,12 @@ impl NavItem {
             active: false,
         }
     }
+
+    /// Sets the active state based on current path
+    pub fn set_active_for_path(mut self, current_path: &str) -> Self {
+        self.active = self.href == current_path;
+        self
+    }
 }
 
 #[cfg(test)]
