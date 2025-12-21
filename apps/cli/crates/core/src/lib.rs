@@ -1,5 +1,16 @@
 //! CLI core library
 
+/// Truncates a string to a maximum length, adding ellipsis if needed
+pub fn truncate(s: &str, max_len: usize) -> String {
+    if s.len() <= max_len {
+        s.to_string()
+    } else if max_len <= 3 {
+        s.chars().take(max_len).collect()
+    } else {
+        format!("{}...", s.chars().take(max_len - 3).collect::<String>())
+    }
+}
+
 pub fn capitalize(s: &str) -> String {
     let mut chars = s.chars();
     match chars.next() {
@@ -31,5 +42,11 @@ mod tests {
     #[test]
     fn test_slugify() {
         assert_eq!(slugify("Hello World"), "hello-world");
+    }
+
+    #[test]
+    fn test_truncate() {
+        assert_eq!(truncate("Hello World", 5), "He...");
+        assert_eq!(truncate("Hi", 5), "Hi");
     }
 }
