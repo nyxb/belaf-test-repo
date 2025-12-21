@@ -1,0 +1,7 @@
+# Changelog
+## [0.2.0] - 2025-12-21
+
+
+### ✨ Features
+
+- *(cli)* Add truncate function for string handling by nyxb - ([bcbd789](/commit/bcbd789f286e8a0d01a1813f3306b33278217daf))
