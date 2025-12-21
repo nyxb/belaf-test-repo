@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.2",
+  "created_at": "2025-12-21T16:13:53.757331Z",
+  "created_by": "nyxb",
+  "base_branch": "main",
+  "releases": [
+    {
+      "name": "web",
+      "ecosystem": "Rust (Cargo)",
+      "previous_version": "0.3.0",
+      "new_version": "0.3.1",
+      "bump_type": "patch",
+      "changelog": "# Changelog\n## [0.3.1] - 2025-12-21\n\n\n### 🐛 Bug Fixes\n\n- *(web)* Add missing active state setter for navigation items by @nyxb - ([120d77f](/commit/120d77fecff730a4c22ef56871e4cef5d9949ea3))\n\n\n## New Contributors\n\n* @nyxb made their first contribution\n",
+      "tag_name": "apps/web/v0.3.1",
+      "prefix": "apps/web/",
+      "is_prerelease": false,
+      "previous_tag": "apps/web/v0.3.0",
+      "compare_url": "https://github.com/nyxb/belaf-test-repo/compare/apps/web/v0.3.0...apps/web/v0.3.1",
+      "contributors": [
+        "nyxb"
+      ],
+      "statistics": {
+        "commit_count": 1,
+        "fixes_count": 1
+      }
+    },
+    {
+      "name": "cli",
+      "ecosystem": "Rust (Cargo)",
+      "previous_version": "0.1.0",
+      "new_version": "0.2.0",
+      "bump_type": "minor",
+      "changelog": "# Changelog\n## [0.2.0] - 2025-12-21\n\n\n### ✨ Features\n\n- *(cli)* Add truncate function for string handling by @nyxb - ([bcbd789](/commit/bcbd789f286e8a0d01a1813f3306b33278217daf))\n\n\n## New Contributors\n\n* @nyxb made their first contribution\n",
+      "tag_name": "apps/cli/v0.2.0",
+      "prefix": "apps/cli/",
+      "is_prerelease": false,
+      "previous_tag": "apps/cli/v0.1.0",
+      "compare_url": "https://github.com/nyxb/belaf-test-repo/compare/apps/cli/v0.1.0...apps/cli/v0.2.0",
+      "contributors": [
+        "nyxb"
+      ],
+      "statistics": {
+        "commit_count": 1,
+        "features_count": 1
+      }
+    },
+    {
+      "name": "api",
+      "ecosystem": "Rust (Cargo)",
+      "previous_version": "0.2.0",
+      "new_version": "0.3.0",
+      "bump_type": "minor",
+      "changelog": "# Changelog\n## [0.3.0] - 2025-12-21\n\n\n### ✨ Features\n\n- *(api)* Add uptime tracking to health check endpoint by @nyxb - ([6ea6508](/commit/6ea65087392055ade4ae81ffc7916bd689aaf19e))\n\n\n## New Contributors\n\n* @nyxb made their first contribution\n",
+      "tag_name": "apps/api/v0.3.0",
+      "prefix": "apps/api/",
+      "is_prerelease": false,
+      "previous_tag": "apps/api/v0.2.0",
+      "compare_url": "https://github.com/nyxb/belaf-test-repo/compare/apps/api/v0.2.0...apps/api/v0.3.0",
+      "contributors": [
+        "nyxb"
+      ],
+      "statistics": {
+        "commit_count": 1,
+        "features_count": 1
+      }
+    }
+  ]
+}
