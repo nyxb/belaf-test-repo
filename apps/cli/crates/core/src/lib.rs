@@ -30,6 +30,26 @@ pub fn slugify(s: &str) -> String {
         .join("-")
 }
 
+/// Pads a string to a minimum length with a given character
+pub fn pad_start(s: &str, min_len: usize, pad_char: char) -> String {
+    if s.len() >= min_len {
+        s.to_string()
+    } else {
+        let padding: String = std::iter::repeat(pad_char).take(min_len - s.len()).collect();
+        format!("{}{}", padding, s)
+    }
+}
+
+/// Pads a string to a minimum length with a given character (end)
+pub fn pad_end(s: &str, min_len: usize, pad_char: char) -> String {
+    if s.len() >= min_len {
+        s.to_string()
+    } else {
+        let padding: String = std::iter::repeat(pad_char).take(min_len - s.len()).collect();
+        format!("{}{}", s, padding)
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -48,5 +68,16 @@ mod tests {
     fn test_truncate() {
         assert_eq!(truncate("Hello World", 5), "He...");
         assert_eq!(truncate("Hi", 5), "Hi");
+    }
+
+    #[test]
+    fn test_pad_start() {
+        assert_eq!(pad_start("42", 5, '0'), "00042");
+        assert_eq!(pad_start("hello", 3, ' '), "hello");
+    }
+
+    #[test]
+    fn test_pad_end() {
+        assert_eq!(pad_end("hi", 5, '.'), "hi...");
     }
 }
