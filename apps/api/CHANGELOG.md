@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.4.0] - 2025-12-23
+
+
+### ✨ Features
+
+- *(api)* Add uptime tracking to health check endpoint by nyxb - ([6ea6508](https://github.com/nyxb/belaf-test-repo/commit/6ea65087392055ade4ae81ffc7916bd689aaf19e))
 ## [0.3.0] - 2025-12-22
 
 
