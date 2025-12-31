@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.2",
+  "created_at": "2025-12-31T09:45:35.738883Z",
+  "created_by": "nyxb",
+  "base_branch": "main",
+  "releases": [
+    {
+      "name": "web",
+      "ecosystem": "Rust (Cargo)",
+      "previous_version": "0.3.2",
+      "new_version": "0.3.3",
+      "bump_type": "patch",
+      "changelog": "# Changelog\n\n## [0.3.3] - 2025-12-31\n\n\n### 🐛 Bug Fixes\n\n- *(web)* Add missing active state setter for navigation items by @nyxb - ([120d77f](https://github.com/nyxb/belaf-test-repo/commit/120d77fecff730a4c22ef56871e4cef5d9949ea3))\n\n\n## New Contributors\n\n* @nyxb made their first contribution\n",
+      "tag_name": "apps/web/v0.3.3",
+      "prefix": "apps/web/",
+      "is_prerelease": false,
+      "previous_tag": "apps/web/v0.3.2",
+      "compare_url": "https://github.com/nyxb/belaf-test-repo/compare/apps/web/v0.3.2...apps/web/v0.3.3",
+      "contributors": [
+        "nyxb"
+      ],
+      "statistics": {
+        "commit_count": 1,
+        "fixes_count": 1
+      }
+    },
+    {
+      "name": "cli",
+      "ecosystem": "Rust (Cargo)",
+      "previous_version": "0.3.0",
+      "new_version": "0.4.0",
+      "bump_type": "minor",
+      "changelog": "# Changelog\n\n## [0.4.0] - 2025-12-31\n\n\n### ✨ Features\n\n- *(cli)* Add pad_start and pad_end string utilities by @nyxb - ([d646c10](https://github.com/nyxb/belaf-test-repo/commit/d646c103ce54274d2546895d9503c8793e6dcf02))\n\n- *(cli)* Add truncate function for string handling by @nyxb - ([bcbd789](https://github.com/nyxb/belaf-test-repo/commit/bcbd789f286e8a0d01a1813f3306b33278217daf))\n\n\n## New Contributors\n\n* @nyxb made their first contribution\n",
+      "tag_name": "apps/cli/v0.4.0",
+      "prefix": "apps/cli/",
+      "is_prerelease": false,
+      "previous_tag": "apps/cli/v0.3.0",
+      "compare_url": "https://github.com/nyxb/belaf-test-repo/compare/apps/cli/v0.3.0...apps/cli/v0.4.0",
+      "contributors": [
+        "nyxb"
+      ],
+      "statistics": {
+        "commit_count": 2,
+        "features_count": 2
+      }
+    },
+    {
+      "name": "api",
+      "ecosystem": "Rust (Cargo)",
+      "previous_version": "0.4.0",
+      "new_version": "0.5.0",
+      "bump_type": "minor",
+      "changelog": "# Changelog\n\n## [0.5.0] - 2025-12-31\n\n\n### ✨ Features\n\n- *(api)* Add uptime tracking to health check endpoint by @nyxb - ([6ea6508](https://github.com/nyxb/belaf-test-repo/commit/6ea65087392055ade4ae81ffc7916bd689aaf19e))\n\n\n## New Contributors\n\n* @nyxb made their first contribution\n",
+      "tag_name": "apps/api/v0.5.0",
+      "prefix": "apps/api/",
+      "is_prerelease": false,
+      "previous_tag": "apps/api/v0.4.0",
+      "compare_url": "https://github.com/nyxb/belaf-test-repo/compare/apps/api/v0.4.0...apps/api/v0.5.0",
+      "contributors": [
+        "nyxb"
+      ],
+      "statistics": {
+        "commit_count": 1,
+        "features_count": 1
+      }
+    }
+  ]
+}
