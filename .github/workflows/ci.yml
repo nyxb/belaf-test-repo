@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  check-api:
+    name: Check API
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust
+        uses: dtolnay/rust-action@stable
+
+      - name: Cache cargo
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/bin/
+            ~/.cargo/registry/index/
+            ~/.cargo/registry/cache/
+            ~/.cargo/git/db/
+            apps/api/target/
+          key: ${{ runner.os }}-cargo-api-${{ hashFiles('apps/api/**/Cargo.lock') }}
+
+      - name: Check
+        working-directory: apps/api
+        run: cargo check --all-targets
+
+      - name: Test
+        working-directory: apps/api
+        run: cargo test
